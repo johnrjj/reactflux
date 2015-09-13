@@ -1,4 +1,6 @@
 var React = require('react');
+var Router = require('react-router');
+var Link = Router.Link;
 
 var Home = React.createClass({
   render: function() {
@@ -7,6 +9,7 @@ var Home = React.createClass({
 
         <h1> REACT HOMIES</h1>
         <p>React, React Router, and Flux</p>
+        <Link to="about" className="btn btn-primary btn-lg">Learn more </Link>
       </div>
     );
   }
