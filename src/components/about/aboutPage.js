@@ -1,6 +1,17 @@
 var React = require('react');
 
 var About = React.createClass({
+
+  statics: {
+    willTransitionTo: function(transition, params, query, callback) {
+      //LOGIN SWAG GOES HERE...
+      // Then just call the callback
+      callback();
+    },
+    willTransitionFrom: function(transition, component) {
+    }
+  },
+
   render: function() {
     return (
       <div >
